@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  hl.
+	User List
+  ul
+	each user, i in userlist
+	 li
+	     a(href="user.mail")=user.name
+  p Welcome to #{title}
